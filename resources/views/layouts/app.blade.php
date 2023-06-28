@@ -15,7 +15,7 @@
     <!--  Includo l'header del sito web con il menu tramite un partial -->
     @include('partials.header')
 
-    <main>
+    <main class="flex justify-center items-center bg-indigo-950 overflow-auto py-8">
         @yield('content')
     </main>
 

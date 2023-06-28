@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 @section('page-title', 'Title Override: Other Page')
 @section('content')
 <div class="my-3">
@@ -12,4 +12,4 @@
     </div>
 
 </div>
-@endsection
+@endsection --}}

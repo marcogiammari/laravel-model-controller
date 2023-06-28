@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+main {
     background-color: #222;
     color: white;
+    height: calc(100vh - 8rem);
 }
 
 header,
 footer {
-    width: 100%;
     background: #EEE;
     color: black;
 }
 
-header img.logo {
-    height: 2rem;
+header,
+footer {
+    height: 4rem;
 }

@@ -1,15 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="my-3">
-    <h1 class="text-3xl text-sky-600 font-bold">Welcome Page</h1>
-    <div>
-        <div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, delectus ad esse illum omnis earum eligendi sint a minus quasi, inventore nulla autem. Maxime voluptatem eligendi veniam voluptates. Soluta, sunt!</p>
-            </div>
-        </div>
-    </div>
 
+<div class="container flex">
+    <div class="flex flex-wrap">
+        @foreach ($movies as $movie)
+            <div class="card flex basis-1/4 flex-col gap-2">
+                <div class="m-8 bg-sky-600 rounded p-3">
+                    <p>Title: {{ $movie->title }}</p>
+                    <p>Original title: {{ $movie->original_title }}</p>
+                    <p>Nationality: {{ $movie->nationality }}</p>
+                    <p>Date: {{ $movie->date }}</p>
+                    <p>Vote: {{ $movie->vote }}</p>
+                </div>
+            </div>
+            
+        @endforeach
+    </div>
 </div>
+
 @endsection

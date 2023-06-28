@@ -1,7 +1,7 @@
-<header class="p-3">
-    <img class="logo" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Laravel Logo">
-    <span>Some links: </span>
-    @foreach ($links as $link)
-        <a href="{{ $link['href'] }}" class="hover:underline text-blue-600 hover:text-sky-600 hover:font-bold mx-2">{{ $link['text'] }}</a>
-    @endforeach
+<header class="bg-sky-700 p-3">
+    <nav class="flex items-center">
+        <h1 class="text-3xl text-indigo-950 font-bold">
+            Movies DB
+        </h1>        
+    </nav>
 </header>

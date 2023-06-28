@@ -1,1 +1,3 @@
-<footer class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</footer>
+<footer class="bg-sky-700 p-3">
+
+</footer>

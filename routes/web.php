@@ -17,3 +17,7 @@ use App\Http\Controllers\Guest\PageController;
 Route::get('/', [PageController::class, 'index']);
 
 Route::get('/best', [PageController::class, 'byVote']);
+
+Route::get('/oldest', [PageController::class, 'byDate']);
+
+// Route::get('/new', [PageController::class, 'newMovie']);

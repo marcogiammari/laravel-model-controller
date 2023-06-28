@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container flex">
+<div class="container flex overflow-auto">
     <div class="flex flex-wrap">
         @foreach ($movies as $movie)
             <div class="card flex basis-1/4 flex-col gap-2">

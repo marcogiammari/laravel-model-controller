@@ -13,4 +13,10 @@ class PageController extends Controller
         $movies = Movie::all();
         return view('welcome', compact('movies'));
     }
+
+    public function byVote()
+    {
+        $movies = Movie::orderBy('vote', 'DESC')->get();
+        return view('best', compact('movies'));
+    }
 }
